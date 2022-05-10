@@ -15,13 +15,13 @@ function drawSquares(dimensions = 16) {
 
     for (let square of squares) {
         square.addEventListener("mouseover", () => {
-            square.classList.add("Active");
+            square.style.cssText += `background-color: rgb(${generateRGB()}, ${generateRGB()}, ${generateRGB()});`;
         });
     }
 }
 
 function generateRGB() {
-    let randomValue = Math.floor(Math.random()*255)/255
+    let randomValue = Math.floor(Math.random() * 255)
     return randomValue;
 }
 
