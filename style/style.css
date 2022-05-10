@@ -1,0 +1,12 @@
+.container {
+    max-width: 1260px;
+    max-height: 1260px;
+    display: grid;
+    padding: 10px;
+}
+
+.square {
+    color: blue;
+    border: solid rgb(128, 128, 128);
+    border-radius: 2px;
+}
