@@ -20,6 +20,11 @@ function drawSquares(dimensions = 16) {
     }
 }
 
+function generateRGB() {
+    let randomValue = Math.floor(Math.random()*255)/255
+    return randomValue;
+}
+
 drawSquares();
 
 const button = document.querySelector("button");
@@ -31,7 +36,7 @@ button.addEventListener("click", () => {
         alert("The canvas can't be bigger than 64x64");
     }
     else {
-        
+
         const squares = document.querySelectorAll(".square");
 
         for (let square of squares) {
