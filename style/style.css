@@ -1,12 +1,24 @@
 .container {
-    max-width: 1260px;
-    max-height: 1260px;
+    width: 100vw;
+    height: 100vh;
     display: grid;
     padding: 10px;
+    justify-content: center;
 }
 
 .square {
-    color: blue;
-    border: solid rgb(128, 128, 128);
-    border-radius: 2px;
+    border: solid rgb(0, 0, 0);
+}
+
+.Active {
+    background-color: black;
+}
+
+button {
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px;
+    margin-left: 30px;
+    background-color: rgb(7, 32, 253);
+    color: rgb(255, 255, 255);
 }
